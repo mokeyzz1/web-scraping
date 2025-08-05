@@ -1,15 +1,34 @@
-# Web Scraping and NLP with Requests, BeautifulSoup, and spaCy
+# Web Scraping and NLP Project
 
-Complete the tasks in the Python Notebook in this repository.
-Make sure to add and push the pkl or text file of your scraped html (this is specified in the notebook)
+This project focuses on web scraping and natural language processing (NLP) using Python tools such as `requests`, `BeautifulSoup`, and `spaCy`.
 
-## Rubric
+The article analyzed is an archived version of:
+https://web.archive.org/web/20210327165005/https://hackaday.com/2021/03/22/how-laser-headlights-work/
 
-* (Question 1) Article html stored in separate file that is committed and pushed: 1 pt
-* (Question 2) Article text is correct: 1 pt
-* (Question 3) Correct (or equivalent in the case of multiple tokens with same frequency) tokens printed: 1 pt
-* (Question 4) Correct (or equivalent in the case of multiple lemmas with same frequency) lemmas printed: 1 pt
-* (Question 5) Correct scores for first sentence printed: 2 pts (1 / function)
-* (Question 6) Histogram shown with appropriate labelling: 1 pt
-* (Question 7) Histogram shown with appropriate labelling: 1 pt
-* (Question 8) Thoughtful answer provided: 1 pt
+## Project Tasks
+
+1. **Scrape article HTML** using `requests` and `BeautifulSoup`.
+2. **Save HTML to file** for reuse and reproducibility.
+3. **Extract and clean text** using `.get_text()` from the parsed HTML.
+4. **Analyze most frequent tokens** after removing stopwords, punctuation, and whitespace.
+5. **Analyze most frequent lemmas** using spaCy’s lemmatizer.
+6. **Score sentences** by how often they include common tokens and lemmas.
+7. **Plot histograms** showing the distribution of sentence scores.
+8. **Filter by nouns only** using `token.pos_ == "NOUN"` for more targeted analysis.
+
+## Files in this Repository
+
+- `web-scraping.ipynb` – Main notebook with all code and answers
+- `web-scraping.html` – Exported HTML version of the notebook
+- `article.html` – The raw article content scraped and saved
+- `README.md` – This file
+
+## Tools Used
+
+- Python
+- Jupyter Notebook
+- requests
+- BeautifulSoup4
+- html5lib
+- spaCy
+- matplotlib
